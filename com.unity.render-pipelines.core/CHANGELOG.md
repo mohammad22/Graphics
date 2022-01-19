@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Linear version of function that sets FSR RCAS shader constants
 - Add probe volume influence weight parameter
+- Added a new extension for `IList` to remove a given number of elements from the back of it.
 - Added support for multiple Baking States to Prove Volumes.
 - Hidding Volume Components not available for the current pipeline on the Volume Profile Inspector.
 
