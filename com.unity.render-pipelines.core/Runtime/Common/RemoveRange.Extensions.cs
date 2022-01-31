@@ -22,7 +22,7 @@ namespace UnityEngine.Rendering
         /// <returns>True if succeed, false otherwise</returns>
         [CollectionAccess(CollectionAccessType.ModifyExistingContent)]
         [MustUseReturnValue]
-        public static bool TryRemoveRange<TList, TValue>([DisallowNull] this TList list, int index, int count, [NotNullWhen(false)] out Exception raisedExceptionIfFailed)
+        public static bool TryRemoveRange<TList, TValue>([DisallowNull] this TList list, int index, int count, [NotNullWhen(false)] out Exception error)
             where TList : IList<TValue>
         {
             try
