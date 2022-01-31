@@ -46,7 +46,7 @@ namespace UnityEngine.Rendering
             }
             catch (Exception e)
             {
-                raisedExceptionIfFailed = e;
+                error= e;
                 return false;
             }
 
