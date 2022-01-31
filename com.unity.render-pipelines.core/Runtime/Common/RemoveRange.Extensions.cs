@@ -23,7 +23,7 @@ namespace UnityEngine.Rendering
         [CollectionAccess(CollectionAccessType.ModifyExistingContent)]
         [MustUseReturnValue]
         public static bool TryRemoveRange<TList, TValue>([DisallowNull] this TList list, int index, int count, [NotNullWhen(false)] out Exception raisedExceptionIfFailed)
-            where TList: IList<TValue>
+            where TList : IList<TValue>
         {
             try
             {
@@ -66,7 +66,7 @@ namespace UnityEngine.Rendering
         /// <exception cref="ArgumentException">index and count do not denote a valid range of elements in the list</exception>
         [CollectionAccess(CollectionAccessType.ModifyExistingContent)]
         public static void RemoveRange<TList, TValue>([DisallowNull] this TList list, int index, int count)
-            where TList: IList<TValue>
+            where TList : IList<TValue>
         {
             if (!TryRemoveRange<TList, TValue>(list, index, count, out var exception))
             {

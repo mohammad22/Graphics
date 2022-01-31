@@ -19,7 +19,7 @@ namespace UnityEngine.Rendering.Tests
         };
 
         bool ItemInRangeAreRemovedAfterRemoveRange<TList>(TList list, int startIndex, int count)
-            where TList: IList<int>
+            where TList : IList<int>
         {
             using (ListPool<int>.Get(out var copy))
             {
@@ -64,7 +64,7 @@ namespace UnityEngine.Rendering.Tests
         };
 
         Exception ExceptionsAreCorrect<TList>(TList list, int startIndex, int count)
-            where TList: IList<int>
+            where TList : IList<int>
         {
             list.TryRemoveRange<TList, int>(startIndex, count, out var exception);
             return exception;
