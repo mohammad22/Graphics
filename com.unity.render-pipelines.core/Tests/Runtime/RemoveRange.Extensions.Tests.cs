@@ -66,8 +66,8 @@ namespace UnityEngine.Rendering.Tests
         Exception ExceptionsAreCorrect<TList>(TList list, int startIndex, int count)
             where TList : IList<int>
         {
-            list.TryRemoveRange<TList, int>(startIndex, count, out var exception);
-            return exception;
+            list.TryRemoveRange<TList, int>(startIndex, count, out var error);
+            return error;
         }
 
         [Test, TestCaseSource(nameof(s_ListTestsCaseDatasExceptions))]
