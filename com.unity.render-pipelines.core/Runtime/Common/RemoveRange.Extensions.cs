@@ -68,9 +68,9 @@ namespace UnityEngine.Rendering
         public static void RemoveRange<TList, TValue>([DisallowNull] this TList list, int index, int count)
             where TList : IList<TValue>
         {
-            if (!TryRemoveRange<TList, TValue>(list, index, count, out var exception))
+            if (!TryRemoveRange<TList, TValue>(list, index, count, out var error))
             {
-                throw exception;
+                throw error;
             }
         }
 
