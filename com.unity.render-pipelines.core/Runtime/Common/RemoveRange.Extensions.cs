@@ -50,7 +50,7 @@ namespace UnityEngine.Rendering
                 return false;
             }
 
-            raisedExceptionIfFailed = null;
+            error= null;
             return true;
         }
 
