@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Fixed material converter not being able to be called in batch mode. [case 1375962]
 - Fixed an issue where specular color was not matching behaviour in Legacy and HDRP. [case 1326941](https://issuetracker.unity3d.com/issues/urp-specular-color-behavior-does-not-match-legacy-or-hdrp)
 - Fixed a shader compiler issue with mismatching variable types when calling lerp.
+- Fixed ScreenSpaceShadows target which was not bound during draw. [case 1388353](https://issuetracker.unity3d.com/product/unity/issues/guid/1388353/)
 
 ## [14.0.0] - 2021-11-17
 
