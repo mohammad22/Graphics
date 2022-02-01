@@ -46,11 +46,11 @@ namespace UnityEngine.Rendering
             }
             catch (Exception e)
             {
-                error= e;
+                error = e;
                 return false;
             }
 
-            error= null;
+            error = null;
             return true;
         }
 
